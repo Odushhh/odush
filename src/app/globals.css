@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-[1440px] w-full;
+  }
+  
+  .btn {
+    @apply py-2 px-4 rounded-full font-medium transition-all duration-200;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold mb-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+}
+
+/* Ensure content is always visible on mobile */
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .container {
+    min-width: 360px;
+  }
+}
+
+/* Prevent horizontal scroll on all screen sizes */
+.overflow-x-hidden {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
