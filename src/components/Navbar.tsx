@@ -220,7 +220,7 @@ export default function Navbar() {
               </li>
               <li className="pt-4">
                 <a
-                  href="https://calendly.com/adrianoduma8"
+                  href="https://cal.com/odumzeez/first15"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn w-full text-center px-8 py-4 text-white bg-[#1A1A1A] text-base hover:bg-black/80 transition-colors"
