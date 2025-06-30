@@ -40,28 +40,50 @@ export default function Home() {
     <>
       {/*<Navbar /> */}
       <main className='bg-[#FAFAFA]'>
-        <section id="home" className="min-h-screen flex flex-col items-center justify-center bg-white px-4 sm:px-0">
+        <section id="home" className="min-h-screen flex flex-col bg-white px-4">
           <Carousel images={carouselImages} />
           
           {/* Hero Section */}
-          <div className='px-96 pt-36'>
-            <div className='flex flex-col gap-4'> 
+          <div className='pt-36 pb-36 flex flex-col justify-center items-center px-0 sm:px-36'>
+            <div className='flex flex-col gap-4 sm:px-64'> 
               <h2 className='text-xl text-gray-700 font-bold'>Nothing Extra. Just Great Design.</h2>
               <div className='text-black/70'>
                 <ul className='space-y-3 text-base'>
                   <li>An independent design studio based in Nairobi, Kenya.</li>
                   <li>The whole team's locked up in the basement creating beautiful interfaces that look as good as they work.</li>
-                  <li>Previously have worked with founders & businesses to help them create digital experiences that converts and boost growth of their business.</li>
-                  <li>Intuitive & frictionless — Your users won't have to think twice about using it.</li>
+                  <li>Previously have worked with founders & businesses to help them create digital experiences that converts and boost growth of their business.</li>                  
                 </ul>
               </div>
-              <button></button>
-            </div>
 
-            
-            <div className='flex flex-row items-center gap-60 pt-12 pb-40'>
-              {/* Services */}
-              <div className="pt-24 flex flex-col gap-4">
+
+              <h2 className='text-xl text-gray-700 font-bold pt-32'>Services</h2>
+              <div className='text-black/70'>
+                <ul className='space-y-2 text-base'>
+                  <li>Product design</li>
+                  <li>Web & mobile design</li>
+                  <li>Hero section roast </li>
+                  <li>UX audits +design consultation</li>
+                  <li>Design systems</li>                 
+                </ul>
+              </div>
+
+
+              <h2 className='text-xl text-gray-700 font-bold pt-28'>Contact</h2>
+              <div className='text-black/70'>
+                <ul className='space-y-2 text-base'>
+                  <li><a href='https://x.com/odumzeez'>Twitter</a></li>
+                  <li><a href='mailto:adrianoduma8@gmail.com'>Email</a></li>                 
+                </ul>
+              </div>
+            </div>       
+          </div>  
+
+          
+
+          
+
+          {/* Services
+            <div className="pt-36 flex flex-col justify-center items-center">
                   <h2 className="text-xl font-bold text-gray-700">Services</h2>
                   <ul className="space-y-2 text-black/70 text-base">
                     <li>Product Design</li>
@@ -72,22 +94,14 @@ export default function Home() {
                   </ul>
               </div>
 
-              {/* Contact */}
-              <div className="flex flex-col gap-4">
-                  <h2 className="text-xl font-bold text-gray-700">Get in Touch</h2>
+              Contact 
+              <div className="flex flex-col justify-center items-start gap-4 pt-24">
+                  <h2 className="text-xl font-bold text-gray-700">Get in touch</h2>
                   <ul className="space-y-2 text-black/70 text-base">
-                    <li><a href='x.com/odumzeez'>Twitter</a></li>
-                    <li><a href='mailto:adrianoduma8@gmail.com'>Email</a></li>
+                    
                   </ul>
-              </div>
-            </div>
-
-            
-
-            
-          </div>
-          
-
+              </div>   
+              */}      
         </section>
 
         {/*
@@ -108,7 +122,7 @@ export default function Home() {
         
 
         {/* Services Section 
-        <section id="services" className="min-h-screen bg-[#F7F7F7] flex items-start">
+        <section id="services" className="min-h-screen bg-[#F7F7F7] flex flex-col sm:flex-row items-start gap-6 sm:gap-0 px-2 sm:px-0">
           <ServicesSection />
         </section>
         */}
@@ -172,7 +186,7 @@ export default function Home() {
         */}
 
         {/* Contact Section 
-        <section id="contact" className="min-h-screen bg-[#F7F7F7] flex items-start">
+        <section id="contact" className="min-h-screen bg-[#F7F7F7] flex flex-col sm:flex-row items-start gap-6 sm:gap-0 px-2 sm:px-0">
           <ContactSection />
         </section>
         */}
