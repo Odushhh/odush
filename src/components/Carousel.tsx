@@ -38,15 +38,6 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   return (
     <div className="relative w-full flex items-center pt-9" style={{ height: 'auto', minHeight: 0, paddingTop: '36px' }}>
-      {/* Left Arrow */}
-      <button
-        className="absolute left-0 z-20 h-20 w-10 flex items-center justify-center bg-white/80 hover:bg-white text-black rounded-r-xl shadow-md top-1/2 -translate-y-1/2"
-        style={{ outline: 'none' }}
-        onClick={() => scrollByImage('left')}
-        aria-label="Scroll left"
-      >
-        &#8592;
-      </button>
       {/* Carousel Images */}
       <div
         ref={scrollRef}
@@ -73,15 +64,6 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           }
         `}</style>
       </div>
-      {/* Right Arrow */}
-      <button
-        className="absolute right-0 z-20 h-16 w-10 flex items-center justify-center bg-white/80 hover:bg-white text-black rounded-l-xl shadow-md top-1/2 -translate-y-1/2"
-        style={{ outline: 'none' }}
-        onClick={() => scrollByImage('right')}
-        aria-label="Scroll right"
-      >
-        &#8594;
-      </button>
     </div>
   );
 };
