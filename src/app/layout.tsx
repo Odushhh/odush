@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 // const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrian Oduma - UX Designer + SWE",
-  description: "UX Designer + Fullstack Developer",
+  title: "ctrlZ Design - Designed for Clarity, Built for Growth",
+  description: "a Freelance Design Studio based in Nairobi, Kenya",
 };
 
 export default function RootLayout({

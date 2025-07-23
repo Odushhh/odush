@@ -1,199 +1,150 @@
 'use client';
 
 import { motion } from 'framer-motion';
-// import Navbar from '@/components/Navbar';
-import WorksSection from '@/components/WorksSection';
-import AboutSection from '@/components/AboutSection';
-import ServicesSection from '@/components/ServicesSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
 import Carousel from '@/components/Carousel';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+declare global {
+  interface Window {
+    Cal?: any;
+  }
+}
 
 export default function Home() {
-  // List of images in public/images (excluding .DS_Store and videos)
+  const [showModal, setShowModal] = useState(false);
+
+  // Add images of selected works here (excluding .DS_Store and videos)
   const carouselImages = [
-    '/images/wrn1.jpg',
-    '/images/wrn2.jpg',
-    '/images/wrn3.jpg',
-    '/images/wrn4.jpg',
-    '/images/enkang1.png',
-    '/images/wellthi1.jpg',
-    '/images/wellthi2.jpg',
-    '/images/mr1.jpg',
-    '/images/appsasa1.jpg',
-    '/images/ms1.png',
-    '/images/nudge1.jpg',
-    '/images/nudge2.jpg',
-    '/images/nudge3.jpg',
-    '/images/nudge4.jpg',
-    '/images/ud1.png',
-    '/images/vct1.jpg',
-    '/images/wellthi3.jpg',
-    //'/images/wellthi4.jpg',   
-    //'/images/wellthi 5.jpg',
-    //'/images/enkang1.png',
-    
-    
+    '/images/wrn0.png',
+    '/images/footer0.png',
+    '/images/wellthi0.png', 
+    '/images/appsasa0.png', 
+    '/images/zenlipa0.png',  
+    '/images/enkang0.png',
+    '/images/nudge01.png',
+    '/images/vct0.png',
+    '/images/minesweeper01.png',
+    '/images/glass0.png',
+    //'/images/minesweeper0.png',
+    //'/images/nudge02.png',    
+    '/images/mookh0.png',
+    '/images/wellthi02.png', 
+    '/images/pricing0.png',  
+    '/images/unhinged01.png',
+    '/images/unhinged02.png',
+     
   ];
+
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowModal(false);
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, []);
+
+  const openCalModal = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (window.Cal) {
+      window.Cal('open', { url: 'https://cal.com/odumzeez/first15' });
+    }
+  };
+
   return (
-    <>
-      {/*<Navbar /> */}
-      <main className='bg-[#FAFAFA]'>
-        <section id="home" className="min-h-screen flex flex-col bg-white px-4">
-          <Carousel images={carouselImages} />
-          
-          {/* Hero Section */}
-          <div className='pt-36 pb-36 flex flex-col justify-center items-center px-0 sm:px-36'>
-            <div className='flex flex-col gap-4 sm:px-64'> 
-              <h2 className='text-xl text-gray-700 font-bold'>Nothing Extra. Just Great Design.</h2>
-              <div className='text-black/70'>
-                <ul className='space-y-3 text-base'>
-                  <li>An independent design studio based in Nairobi, Kenya.</li>
-                  <li>The whole team's locked up in the basement creating beautiful interfaces that look as good as they work.</li>
-                  <li>Previously have worked with founders & businesses to help them create digital experiences that converts and boost growth of their business.</li>                  
-                </ul>
-              </div>
+    <main className="bg-[#181818] min-h-screen w-full flex flex-row pl-8">
+      {/* Left Side */}
+      <div className="w-[30%] min-h-screen flex flex-col justify-between items-start pr-1">
 
+        <div className="flex flex-col gap-12 justify-between items-start">
+          <div  className="flex flex-col justify-between items-start">
+            {/* Logo */}
+            <div className="py-8">
+              <a href='https://ctrlzs.studio/'>
+              <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} />
+              </a>
+              
+            </div>
+            {/* Headline */}
+            <h1 className="text-xl font-semibold text-white mb-8">Design that looks good, but<br />works even better.</h1>
+            {/* Subtext */}
+            <div className="text-sm text-gray-400 mb-8">
+              <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
+              <p className="mb-4">Whole team is locked up (willingly) in the basement - designing interfaces that look as good as they work.</p>
+              <p className="mb-2">We've helped founders, startups, and brands discover how they want their online presence to look and feel.</p>
+            </div>
+            {/* Services List */}
+            <div className="mb-12">
+              <div className="text-white text-sm text-gray-400 mb-4">We do everything design-related that includes:</div>
+              <ul className="space-y-1 text-sm text-white">
+                <li>+ Product design</li>
+                <li>+ Web & mobile design</li>
+                <li>+ Design systems</li>
+                <li>+ Landing page roasts</li>
+                <li>+ UX audits & consultation</li>
+              </ul>
+            </div>
 
-              <h2 className='text-xl text-gray-700 font-bold pt-32'>Services</h2>
-              <div className='text-black/70'>
-                <ul className='space-y-2 text-base'>
-                  <li>Product design</li>
-                  <li>Web & mobile design</li>
-                  <li>Hero section roast </li>
-                  <li>UX audits +design consultation</li>
-                  <li>Design systems</li>                 
-                </ul>
-              </div>
-
-
-              <h2 className='text-xl text-gray-700 font-bold pt-28'>Contact</h2>
-              <div className='text-black/70'>
-                <ul className='space-y-2 text-base'>
-                  <li><a href='https://x.com/odumzeez'>Twitter</a></li>
-                  <li><a href='mailto:adrianoduma8@gmail.com'>Email</a></li>                 
-                </ul>
-              </div>
-            </div>       
-          </div>  
-
+          </div>
           
 
-          
+          <div className='flex flex-col gap-4 justify-between items-start absolute inset-x-0 bottom-0 px-8'>
+            {/* Tagline */}
+            <div className="text-gray-400 text-sm mb-2">Open to serious projects. Or seriously fun ones.</div>
+            {/* Button */}
 
-          {/* Services
-            <div className="pt-36 flex flex-col justify-center items-center">
-                  <h2 className="text-xl font-bold text-gray-700">Services</h2>
-                  <ul className="space-y-2 text-black/70 text-base">
-                    <li>Product Design</li>
-                    <li>Web & Mobile Design</li>
-                    <li>Hero Section Roast</li>
-                    <li>UX Audits + Design consultation</li>
-                    <li>Design Systems</li>
-                  </ul>
-              </div>
-
-              Contact 
-              <div className="flex flex-col justify-center items-start gap-4 pt-24">
-                  <h2 className="text-xl font-bold text-gray-700">Get in touch</h2>
-                  <ul className="space-y-2 text-black/70 text-base">
-                    
-                  </ul>
-              </div>   
-              */}      
-        </section>
-
-        {/*
-         Works Section 
-        <section id="works" className="min-h-screen bg-[#F7F7F7]">
-          <WorksSection />
-        </section>
-
-        {/* About Section 
-        <section id="about" className="min-h-screen bg-[#F7F7F7]">
-          <AboutSection />
-        </section>
-
-         Testimonials Section 
-        <section id="testimonials">
-          <TestimonialsSection />
-        </section>
-        
-
-        {/* Services Section 
-        <section id="services" className="min-h-screen bg-[#F7F7F7] flex flex-col sm:flex-row items-start gap-6 sm:gap-0 px-2 sm:px-0">
-          <ServicesSection />
-        </section>
-        */}
-
-        {/* Book Call Section 
-        <section className="py-20 bg-[#E1E1E1]">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-base font-inter font-md border border-black/30 rounded-full px-4 py-1 inline-flex items-center gap-2 text-black/80 mb-8"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              Available for work
-            </motion.p>
-              
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-4xl font-bold mb-6"
+            <div className='flex flex-row gap-2 justify-between items-start'>
+              <button
+                onClick={openModal}
+                className="bg-white text-black rounded-full px-5 py-3 font-semibold text-sm mb-4 hover:bg-[#D9D9D9] transition-colors duration-100"
               >
-                Let's talk about your projects
-              </motion.h2>
+                Schedule Call
+              </button>
+
+              <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-5 py-3 font-semibold text-sm mb-4 hover:bg-[#454545] transition-colors duration-100">Drop an Email</a>
               
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-xl text-black/80 mb-12"
-              >
-                I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-              </motion.p>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <a
-                  href="https://calendly.com/adrianoduma8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn px-8 py-4 text-white bg-[#1A1A1A] text-lg hover:bg-black/80 transition-colors inline-block"
-                >
-                  Book a Call
-                </a>
-              </motion.div>
+            </div>
+            
+            
+            {/* Client Logos */}
+            <div className="flex flex-row gap-8 items-center opacity-80 mb-8">
+              <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
+              <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} />
+              <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} />
             </div>
           </div>
-        </section>
+        </div>
+  
+      </div>
+      {/* Right Side: Vertical Carousel */}
+      <div className="w-[75%] max-h-screen flex flex-col justify-center items-center">
+        <Carousel images={carouselImages} direction="vertical" />
+      </div>
 
-        */}
 
-        {/* Contact Section 
-        <section id="contact" className="min-h-screen bg-[#F7F7F7] flex flex-col sm:flex-row items-start gap-6 sm:gap-0 px-2 sm:px-0">
-          <ContactSection />
-        </section>
-        */}
-      </main>
-      
-      <Footer />
-      
-    </>
+      {/* Cal.com Calendar Modal*/}
+      {showModal && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-4">
+          <div className="relative rounded-xl w-full max-w-6xl h-[85vh]">
+            <button
+              className="fixed top-8 right-8 text-white text-4xl z-[1000] font-light hover:text-[#808080] transition-colors duration-200"
+              onClick={closeModal}
+            >
+              &times;
+            </button>
+            <iframe
+              src="https://cal.com/odumzeez/first15"
+              allow="camera; microphone; fullscreen; speaker; display-capture"
+              className="w-full h-full border-0"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      )}
+
+    </main>
   );
 }

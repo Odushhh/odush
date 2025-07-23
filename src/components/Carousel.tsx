@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 
 interface CarouselProps {
   images: string[];
+  direction?: 'horizontal' | 'vertical';
 }
 
 const getCaption = (img: string) => {
@@ -11,9 +12,11 @@ const getCaption = (img: string) => {
   return filename.replace(/\.[^/.]+$/, '').replace(/_/g, ' ');
 };
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+const Carousel: React.FC<CarouselProps> = ({ images, direction = 'horizontal' }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const imgRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const isVertical = direction === 'vertical';
 
   const scrollByImage = (dir: 'left' | 'right') => {
     if (!scrollRef.current || imgRefs.current.length === 0) return;
@@ -37,23 +40,42 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full flex items-center pt-9" style={{ height: 'auto', minHeight: 0, paddingTop: '36px' }}>
+    <div
+      className={`relative w-full flex items-center pt-4 ${isVertical ? '' : 'pt-9'}`}
+      style={{ height: isVertical ? '100%' : 'auto', minHeight: 0, paddingTop: isVertical ? 0 : '36px', paddingBottom: 0 }}
+    >
       {/* Carousel Images */}
       <div
         ref={scrollRef}
-        className="w-full overflow-x-auto flex gap-5 items-center justify-start snap-x snap-mandatory scrollbar-none pl-12 sm:pl-12"
-        style={{ paddingLeft: '48px', scrollbarWidth: 'none', msOverflowStyle: 'none', height: 'auto', minHeight: 0 }}
+        className={
+          isVertical
+            ? 'h-full w-full overflow-y-auto flex flex-col gap-4 items-center justify-start scrollbar-none pl-0 pr-0'
+            : 'w-full overflow-x-auto flex gap-5 items-center justify-start snap-x snap-mandatory scrollbar-none pt-4 pl-12 sm:pl-12'
+        }
+        style={
+          isVertical
+            ? { scrollbarWidth: 'none', msOverflowStyle: 'none', height: '100%', minHeight: 0, paddingTop: 0, paddingBottom: 0, paddingRight: 0 }
+            : { paddingLeft: '28px', scrollbarWidth: 'none', msOverflowStyle: 'none', height: 'auto', minHeight: 0 }
+        }
       >
         {images.map((img, idx) => (
           <div
             key={img}
             ref={el => { imgRefs.current[idx] = el; }}
-            className="flex-shrink-0 w-auto max-h-[520px] snap-center flex flex-col items-center justify-center"
+            className={
+              isVertical
+                ? 'flex-shrink-0 w-full h-[775px] gap-8 snap-center flex flex-col items-center justify-center'
+                : 'flex-shrink-0 w-auto max-h-[530px] snap-center flex flex-col items-center justify-center'
+            }
           >
             <img
               src={img}
               alt={`carousel-img-${idx}`}
-              className="max-h-[520px] w-auto object-contain rounded-xl bg-white border border-[#EEEEEE]"
+              className={
+                isVertical
+                  ? 'h-[775px] w-full object-contain rounded-xl'
+                  : 'max-h-[520px] w-auto object-contain rounded-xl'
+              }
               draggable={false}
             />
           </div>
