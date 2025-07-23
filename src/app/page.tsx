@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Carousel from '@/components/Carousel';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/next"
 
 declare global {
   interface Window {
@@ -56,6 +57,7 @@ export default function Home() {
 
   return (
     <main className="bg-[#181818] min-h-screen w-full flex flex-row pl-8">
+    <Analytics />
       {/* Left Side */}
       <div className="w-[30%] min-h-screen flex flex-col justify-between items-start pr-1">
 
