@@ -56,97 +56,119 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-[#181818] min-h-screen w-full flex flex-row pl-8">
-    <Analytics />
-      {/* Left Side */}
-      <div className="w-[30%] min-h-screen flex flex-col justify-between items-start pr-1">
+    
+    <div className="bg-[#181818] min-h-screen w-full flex flex-col md:flex-row  ">
+      <Analytics  />
 
-        <div className="flex flex-col gap-12 justify-between items-start">
-          <div  className="flex flex-col justify-between items-start">
-            {/* Logo */}
-            <div className="py-8">
-              <a href='https://ctrlzs.studio/'>
-              <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} />
-              </a>
+      {/* Mobile Header (hidden on desktop) */}
+      <header className="md:hidden px-6 pt-4">
+        <div className="flex justify-between items-center w-[700px] md:w-full">
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }}>
+            <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={70} height={30} />
+          </a>
+        </div>
+
+      </header>
+
+
+      {/* Main Content - Web version */}
+      <main className="bg-[#181818] w-full min-h-screen flex flex-col pl-0 pt-2 md:pt-0 md:flex-row md:pl-8">
+        
+        {/* Left Side */}
+        <div className="w-full h-[500px] z-50 md:z-0 md:w-[30%] pt-8 pr-6 pl-6 md:pl-8 md:pr-1 md:h-screen md:top-0 justify-start items-start md:justify-between md:items-start md:sticky md:overflow-y-auto">
+
+          <div className="flex flex-col gap-10 justify-start md:justify-between items-start md:items-start">
+            <div  className="flex flex-col gap-0 justify-start items-start">
+              {/* Logo */}
+              <div className="hidden md:block pt-0 mb-8">
+                <a href='https://ctrlzs.studio/'>
+                <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} />
+                </a>
+                
+              </div>
+              {/* Headline */}
+              <h1 className="text-xl font-semibold text-white mb-4 md:mb-8">Design that looks good, but<br />works even better.</h1>
+              {/* Subtext */}
+              <div className="text-sm text-gray-400 mb-4 md:mb-8">
+                <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
+                <p className="mb-4">Whole team is locked up (willingly) in the basement - designing interfaces that look as good as they work.</p>
+                <p className="mb-2">We've helped founders, startups, and brands determine how they want their online presence to look and feel.</p>
+              </div>
+              {/* Services List */}
+              <div className="mb-0 md:mb-12">
+                <div className="text-gray-400 text-sm mb-4">We do everything design-related that includes:</div>
+                <ul className="space-y-1 text-sm text-white">
+                  <li>+ Product design</li>
+                  <li>+ Web & mobile design</li>
+                  <li>+ Design systems</li>
+                  <li>+ Landing page roasts</li>
+                  <li>+ UX audits & consultation</li>
+                </ul>
+              </div>
+
+            </div>
+            
+
+            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:px-8 pb-0 md:pb-8'>
+              {/* Tagline */}
+              <div className="text-gray-400 text-sm mb-4 md:mb-6">Open to serious projects. Or seriously fun ones.</div>
+              {/* Button */}
+
+              <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-4'>
+                <button
+                  onClick={openModal}
+                  className="bg-white text-black rounded-full px-1 py-3 md:px-6 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
+                >
+                  Schedule a Call
+                </button>
+
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">Drop an Email</a>
+                
+              </div>
               
+              
+              {/* Client Logos */}
+              <div className="flex flex-row gap-8 items-center opacity-90 my-4 md:mb-4">
+                <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
+                <Image src="/mookhlogo.png" alt="mookh" width={85} height={110}   />
+                <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110}  />
+              </div>
             </div>
-            {/* Headline */}
-            <h1 className="text-xl font-semibold text-white mb-8">Design that looks good, but<br />works even better.</h1>
-            {/* Subtext */}
-            <div className="text-sm text-gray-400 mb-8">
-              <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
-              <p className="mb-4">Whole team is locked up (willingly) in the basement - designing interfaces that look as good as they work.</p>
-              <p className="mb-2">We've helped founders, startups, and brands discover how they want their online presence to look and feel.</p>
-            </div>
-            {/* Services List */}
-            <div className="mb-12">
-              <div className="text-white text-sm text-gray-400 mb-4">We do everything design-related that includes:</div>
-              <ul className="space-y-1 text-sm text-white">
-                <li>+ Product design</li>
-                <li>+ Web & mobile design</li>
-                <li>+ Design systems</li>
-                <li>+ Landing page roasts</li>
-                <li>+ UX audits & consultation</li>
-              </ul>
-            </div>
-
           </div>
-          
 
-          <div className='flex flex-col gap-4 justify-between items-start absolute inset-x-0 bottom-0 px-8'>
-            {/* Tagline */}
-            <div className="text-gray-400 text-sm mb-2">Open to serious projects. Or seriously fun ones.</div>
-            {/* Button */}
+        </div>
 
-            <div className='flex flex-row gap-2 justify-between items-start'>
+
+        {/* Right Side: Vertical Carousel */}
+        <div className="w-full md:w-[70%] max-h-[100%] md:max-h-[100%] md:relative flex justify-center md:justify-center items-center md:items-center">
+          <Carousel images={carouselImages} direction="vertical" />
+        </div>
+
+
+        {/* Cal.com Calendar Modal*/}
+        {showModal && (
+          <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-4">
+            <div className="relative rounded-xl w-full max-w-6xl h-[85vh]">
               <button
-                onClick={openModal}
-                className="bg-white text-black rounded-full px-5 py-3 font-semibold text-sm mb-4 hover:bg-[#D9D9D9] transition-colors duration-100"
+                className="fixed top-8 right-8 text-white text-4xl z-[1000] font-light hover:text-[#808080] transition-colors duration-200"
+                onClick={closeModal}
               >
-                Schedule Call
+                &times;
               </button>
-
-              <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-5 py-3 font-semibold text-sm mb-4 hover:bg-[#454545] transition-colors duration-100">Drop an Email</a>
-              
-            </div>
-            
-            
-            {/* Client Logos */}
-            <div className="flex flex-row gap-8 items-center opacity-80 mb-8">
-              <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
-              <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} />
-              <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} />
+              <iframe
+                src="https://cal.com/odumzeez/first15"
+                allow="camera; microphone; fullscreen; speaker; display-capture"
+                className="w-full h-full border-0"
+                loading="lazy"
+              />
             </div>
           </div>
-        </div>
-  
-      </div>
-      {/* Right Side: Vertical Carousel */}
-      <div className="w-[75%] max-h-screen flex flex-col justify-center items-center">
-        <Carousel images={carouselImages} direction="vertical" />
-      </div>
+        )}
 
+      </main>
 
-      {/* Cal.com Calendar Modal*/}
-      {showModal && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-4">
-          <div className="relative rounded-xl w-full max-w-6xl h-[85vh]">
-            <button
-              className="fixed top-8 right-8 text-white text-4xl z-[1000] font-light hover:text-[#808080] transition-colors duration-200"
-              onClick={closeModal}
-            >
-              &times;
-            </button>
-            <iframe
-              src="https://cal.com/odumzeez/first15"
-              allow="camera; microphone; fullscreen; speaker; display-capture"
-              className="w-full h-full border-0"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      )}
+    </div>
 
-    </main>
+    
   );
 }

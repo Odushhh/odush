@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 interface CarouselProps {
   images: string[];
-  direction?: 'horizontal' | 'vertical';
+  direction?: 'vertical' | 'horizontal';
 }
 
 const getCaption = (img: string) => {
@@ -12,17 +12,47 @@ const getCaption = (img: string) => {
   return filename.replace(/\.[^/.]+$/, '').replace(/_/g, ' ');
 };
 
-const Carousel: React.FC<CarouselProps> = ({ images, direction = 'horizontal' }) => {
+const Carousel: React.FC<CarouselProps> = ({ images, direction = 'vertical' }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const imgRefs = useRef<(HTMLDivElement | null)[]>([]);
-
   const isVertical = direction === 'vertical';
 
-  const scrollByImage = (dir: 'left' | 'right') => {
+  const scrollBy = (direction: 'up' | 'down') => {
+    if (!scrollRef.current) return;
+
+    const container = scrollRef.current;
+    const currentScroll = container.scrollTop;
+    const scrollAmount = window.innerHeight * 0.9;
+
+    container.scrollTo({
+      top: direction === 'down'
+        ? currentScroll + scrollAmount
+        : currentScroll - scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  const scrollByImage = (dir: 'up' | 'down') => {
     if (!scrollRef.current || imgRefs.current.length === 0) return;
+
     const container = scrollRef.current;
     const containerRect = container.getBoundingClientRect();
+    const currentPosition = container.scrollTop;
+    const viewportHeight = container.clientHeight;
+    const scrollAmount = viewportHeight * 0.9; // 80% of viewport height
+    
+    const targetPosition = dir === 'down' 
+      ? Math.min(currentPosition + scrollAmount, container.scrollHeight - viewportHeight)
+      : Math.max(currentPosition - scrollAmount, 0);
+
+    container.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+
+    
     let targetIdx = 0;
+
     for (let i = 0; i < imgRefs.current.length; i++) {
       const imgDiv = imgRefs.current[i];
       if (!imgDiv) continue;
@@ -32,30 +62,50 @@ const Carousel: React.FC<CarouselProps> = ({ images, direction = 'horizontal' })
         break;
       }
     }
-    let scrollToIdx = dir === 'left' ? Math.max(0, targetIdx - 1) : Math.min(images.length - 1, targetIdx + 1);
+
+    let scrollToIdx = dir === 'up' || 'down' ? Math.max(0, targetIdx - 1) : Math.min(images.length - 1, targetIdx + 1);
     const targetDiv = imgRefs.current[scrollToIdx];
     if (targetDiv) {
       container.scrollTo({ left: targetDiv.offsetLeft - 48, behavior: 'smooth' }); // 48px left padding
     }
+    
+
   };
 
   return (
     <div
-      className={`relative w-full flex items-center pt-4 ${isVertical ? '' : 'pt-9'}`}
-      style={{ height: isVertical ? '100%' : 'auto', minHeight: 0, paddingTop: isVertical ? 0 : '36px', paddingBottom: 0 }}
+      className='relative bg-[#181818] overflow-hidden w-full h-screen flex items-center pt-8 md:pt-0 gap-4 md:gap-2 md:overflow-y-auto md:snap-y md:snap-mandatory'
+      style={{ 
+        height: isVertical ? '100%' : 'auto', 
+        minHeight: 0, 
+        paddingTop: '0px', 
+        paddingBottom: '0px', 
+        background: '#181818',        
+        // overflow: 'none',
+      }}
     >
       {/* Carousel Images */}
       <div
         ref={scrollRef}
         className={
           isVertical
-            ? 'h-full w-full overflow-y-auto flex flex-col gap-4 items-center justify-start scrollbar-none pl-0 pr-0'
-            : 'w-full overflow-x-auto flex gap-5 items-center justify-start snap-x snap-mandatory scrollbar-none pt-4 pl-12 sm:pl-12'
+            ? 'bg-[#181818] h-full w-full overflow-none md:overflow-y-auto md:snap-y md:snap-mandatory flex flex-col md:flex-row gap-0 md:gap-24 md:h-[600px] justify-start items-center scrollbar-none pl-0 pr-0'
+            : 'w-full overflow-none md:overflow-y-auto md:snap-y md:snap-mandatory flex flex-col md:flex-row gap-0 md:gap-24 items-center justify-start scrollbar-none pt-4 md:pt-0 pl-12 sm:pl-12 md:pr-4' 
         }
-        style={
-          isVertical
-            ? { scrollbarWidth: 'none', msOverflowStyle: 'none', height: '100%', minHeight: 0, paddingTop: 0, paddingBottom: 0, paddingRight: 0 }
-            : { paddingLeft: '28px', scrollbarWidth: 'none', msOverflowStyle: 'none', height: 'auto', minHeight: 0 }
+            
+        style={{
+              scrollbarWidth: 'none', 
+              scrollBehavior: 'smooth',
+              scrollSnapType: 'y mandatory',
+              overscrollBehavior: 'contain',
+              msOverflowStyle: 'none', 
+              height: '95%', 
+              minHeight: 0, 
+              paddingTop: 0, 
+              paddingBottom: 0, 
+              paddingRight: 0,    
+              background: '#181818'                                      
+            }   
         }
       >
         {images.map((img, idx) => (
@@ -64,19 +114,20 @@ const Carousel: React.FC<CarouselProps> = ({ images, direction = 'horizontal' })
             ref={el => { imgRefs.current[idx] = el; }}
             className={
               isVertical
-                ? 'flex-shrink-0 w-full h-[775px] gap-8 snap-center flex flex-col items-center justify-center'
-                : 'flex-shrink-0 w-auto max-h-[530px] snap-center flex flex-col items-center justify-center'
+                ? 'pt-32 md:pt-0 flex-shrink-0 w-full max-h-[105vh] md:max-h-[100vh] snap-center flex flex-col gap-0 md:gap-8 items-center justify-center md:justify-center md:items-center'
+                : 'flex-shrink-0 w-auto max-h-[500px] snap-center flex flex-col items-center justify-center mr-8 gap-0'
             }
+            
           >
             <img
               src={img}
+              draggable={false}
               alt={`carousel-img-${idx}`}
               className={
                 isVertical
-                  ? 'h-[775px] w-full object-contain rounded-xl'
-                  : 'max-h-[520px] w-auto object-contain rounded-xl'
+                  ? 'h-full md:max-h-[105vh] w-full object-contain bg-[#181818]'
+                  : 'max-h-[100vh] w-auto object-contain bg-[#181818]'
               }
-              draggable={false}
             />
           </div>
         ))}
