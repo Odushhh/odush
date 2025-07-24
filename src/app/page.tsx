@@ -75,7 +75,7 @@ export default function Home() {
       <main className="bg-[#181818] w-full min-h-screen flex flex-col pl-0 pt-2 md:pt-0 md:flex-row md:pl-8">
         
         {/* Left Side */}
-        <div className="w-full h-[500px] z-50 md:z-0 md:w-[30%] pt-8 pr-6 pl-6 md:pl-8 md:pr-1 md:h-screen md:top-0 justify-start items-start md:justify-between md:items-start md:sticky md:overflow-y-auto">
+        <div className="w-full h-[620px] z-50 md:z-0 md:w-[30%] pt-8 pr-6 pl-6 md:pl-4 md:pr-4 md:h-screen md:top-0 justify-start items-start md:justify-between md:items-start md:sticky md:overflow-y-auto">
 
           <div className="flex flex-col gap-10 justify-start md:justify-between items-start md:items-start">
             <div  className="flex flex-col gap-0 justify-start items-start">
@@ -89,14 +89,14 @@ export default function Home() {
               {/* Headline */}
               <h1 className="text-xl font-semibold text-white mb-4 md:mb-8">Design that looks good, but<br />works even better.</h1>
               {/* Subtext */}
-              <div className="text-sm text-gray-400 mb-4 md:mb-8">
+              <div className="text-sm text-gray-400 mb-2 md:mb-8">
                 <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
                 <p className="mb-4">Whole team is locked up (willingly) in the basement - designing interfaces that look as good as they work.</p>
-                <p className="mb-2">We've helped founders, startups, and brands determine how they want their online presence to look and feel.</p>
+                <p className="mb-2">We've helped founders, startups, and brands discover<br />how they want their online presence to look and feel.</p>
               </div>
               {/* Services List */}
               <div className="mb-0 md:mb-12">
-                <div className="text-gray-400 text-sm mb-4">We do everything design-related that includes:</div>
+                <div className="text-gray-400 text-sm mb-4 md:md-4">We do everything design-related that includes:</div>
                 <ul className="space-y-1 text-sm text-white">
                   <li>+ Product design</li>
                   <li>+ Web & mobile design</li>
@@ -109,9 +109,9 @@ export default function Home() {
             </div>
             
 
-            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:px-8 pb-0 md:pb-8'>
+            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 pb-0 md:pb-8'>
               {/* Tagline */}
-              <div className="text-gray-400 text-sm mb-4 md:mb-6">Open to serious projects. Or seriously fun ones.</div>
+              <div className="text-gray-400 text-sm mb-6 md:mb-6">Open to serious projects. Or seriously fun ones.</div>
               {/* Button */}
 
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-4'>
@@ -128,7 +128,7 @@ export default function Home() {
               
               
               {/* Client Logos */}
-              <div className="flex flex-row gap-8 items-center opacity-90 my-4 md:mb-4">
+              <div className="flex flex-row gap-8 items-center opacity-80 py-4 md:mb-4">
                 <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
                 <Image src="/mookhlogo.png" alt="mookh" width={85} height={110}   />
                 <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110}  />

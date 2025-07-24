@@ -74,7 +74,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, direction = 'vertical' }) =
 
   return (
     <div
-      className='relative bg-[#181818] overflow-hidden w-full h-screen flex items-center pt-8 md:pt-0 gap-4 md:gap-2 md:overflow-y-auto md:snap-y md:snap-mandatory'
+      className='relative bg-[#181818] overflow-y-auto w-full md:max-w-[100%] h-screen md:h-screen flex md:flex-nowrap items-center pt-8 md:pt-0 gap-0 md:gap-0 md:overflow-y-auto md:snap-y md:snap-mandatory'
       style={{ 
         height: isVertical ? '100%' : 'auto', 
         minHeight: 0, 
@@ -89,7 +89,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, direction = 'vertical' }) =
         ref={scrollRef}
         className={
           isVertical
-            ? 'bg-[#181818] h-full w-full overflow-none md:overflow-y-auto md:snap-y md:snap-mandatory flex flex-col md:flex-row gap-0 md:gap-24 md:h-[600px] justify-start items-center scrollbar-none pl-0 pr-0'
+            ? 'bg-[#181818] w-full md:max-w-[98%] border-box md:h-screen overflow-visible md:overflow-y-auto md:snap-y md:snap-mandatory flex flex-col md:flex-col gap-0 md:gap-2 md:h-[100%] justify-start items-center scrollbar-none pl-0 pr-0'
             : 'w-full overflow-none md:overflow-y-auto md:snap-y md:snap-mandatory flex flex-col md:flex-row gap-0 md:gap-24 items-center justify-start scrollbar-none pt-4 md:pt-0 pl-12 sm:pl-12 md:pr-4' 
         }
             
@@ -99,12 +99,12 @@ const Carousel: React.FC<CarouselProps> = ({ images, direction = 'vertical' }) =
               scrollSnapType: 'y mandatory',
               overscrollBehavior: 'contain',
               msOverflowStyle: 'none', 
-              height: '95%', 
+              height: '100%', 
               minHeight: 0, 
               paddingTop: 0, 
               paddingBottom: 0, 
               paddingRight: 0,    
-              background: '#181818'                                      
+              background: '#181818' ,    
             }   
         }
       >
@@ -114,8 +114,8 @@ const Carousel: React.FC<CarouselProps> = ({ images, direction = 'vertical' }) =
             ref={el => { imgRefs.current[idx] = el; }}
             className={
               isVertical
-                ? 'pt-32 md:pt-0 flex-shrink-0 w-full max-h-[105vh] md:max-h-[100vh] snap-center flex flex-col gap-0 md:gap-8 items-center justify-center md:justify-center md:items-center'
-                : 'flex-shrink-0 w-auto max-h-[500px] snap-center flex flex-col items-center justify-center mr-8 gap-0'
+                ? 'py-2 md:py-0 flex-shrink-0 w-full max-h-[100vh] md:max-h-[100vh] snap-center flex flex-col gap-0 md:gap-2 items-center justify-start md:justify-center md:items-center'
+                : 'flex-shrink-0 w-auto h-[250px] snap-center flex flex-col items-center justify-center mr-8 gap-0'
             }
             
           >
