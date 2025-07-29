@@ -16,9 +16,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   // Add images of selected works here (excluding .DS_Store and videos)
-  const carouselImages = [
-    '/images/ob3.png',
-    '/images/ob4.png', 
+  const carouselImages = [    
     '/images/ob1.png',
     '/images/ob2.png', 
     '/images/wrn0.png',
@@ -31,13 +29,16 @@ export default function Home() {
     '/images/enkang0.png',  
     '/images/vct0.png',
     '/images/minesweeper01.png',
-    '/images/glass0.png',
-    //'/images/minesweeper0.png',
-    //'/images/nudge02.png',    
+    '/images/glass0.png', 
     '/images/mookh0.png',
     '/images/pricing0.png',  
     '/images/unhinged01.png',
     '/images/unhinged02.png',
+
+    // '/images/ob3.png',
+    // '/images/ob4.png', 
+    //'/images/minesweeper0.png',
+    //'/images/nudge02.png',   
      
   ];
 
