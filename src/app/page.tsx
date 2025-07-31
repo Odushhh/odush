@@ -21,6 +21,7 @@ export default function Home() {
     '/images/ob2.png', 
     '/images/wrn0.png',
     '/images/footer0.png',
+    '/images/eventapp1.png'
     '/images/wellthi0.png', 
     '/images/wellthi02.png', 
     '/images/zenlipa0.png', 
