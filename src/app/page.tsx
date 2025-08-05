@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             
 
-            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 pb-0 md:pb-8 md:pt-12'>
+            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 pb-0 md:pb-4 md:pt-12'>
               {/* Tagline */}
               <div className="text-gray-400 text-sm mb-6 md:mb-6">Open to serious projects. Or seriously fun ones.</div>
               {/* Button */}
