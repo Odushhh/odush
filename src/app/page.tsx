@@ -93,7 +93,7 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4 md:mb-4">Design that looks good, but<br />works even better.</h1>
+              <h1 className="text-2xl md:text-2xl font-semibold text-white mb-4 md:mb-6">Design that looks good, but<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm text-gray-400 mb-2 md:mb-8">
                 <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
