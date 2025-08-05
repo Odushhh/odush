@@ -107,8 +107,8 @@ export default function Home() {
                   <li>+ Product design</li>
                   <li>+ Web & mobile design</li>
                   <li>+ Design systems</li>
-                  <li>+ Landing page roasts</li>
-                  <li>+ UX audits & consultation</li>
+                  <li>+ Landing page redesign</li>
+                  <li>+ UX audit & consultation</li>
                 </ul>
               </div>
 
