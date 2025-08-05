@@ -83,7 +83,7 @@ export default function Home() {
         {/* Left Side */}
         <div className="w-full h-[620px] z-50 md:z-0 md:w-[30%] pt-8 pr-6 pl-6 md:pl-4 md:pr-4 md:h-screen md:top-0 justify-start items-start md:justify-between md:items-start md:sticky md:overflow-y-auto">
 
-          <div className="flex flex-col gap-10 justify-start md:justify-between items-start md:items-start">
+          <div className="flex flex-col gap-10 justify-start items-start md:justify-between">
             <div  className="flex flex-col gap-0 justify-start items-start">
               {/* Logo */}
               <div className="hidden md:block pt-0 mb-8">
@@ -97,7 +97,7 @@ export default function Home() {
               {/* Subtext */}
               <div className="text-sm text-gray-400 mb-2 md:mb-8">
                 {/*<p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>*/}
-                <p className="mb-4">Startups and brands trust us to lead their product design efforts - <br />for high-converting, intuitive products that look as good as they work.</p>
+                <p className="mb-4">Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
                 <p className="mb-2">Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
               </div>
               {/* Services List */}
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             
 
-            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 pb-0 md:pb-8'>
+            <div className='relative md:gap-4 md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 pb-0 md:pb-8 md:pb-6'>
               {/* Tagline */}
               <div className="text-gray-400 text-sm mb-6 md:mb-6">Open to serious projects. Or seriously fun ones.</div>
               {/* Button */}
