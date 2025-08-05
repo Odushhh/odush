@@ -101,7 +101,7 @@ export default function Home() {
                 <p className="mb-2">Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
               </div>
               {/* Services List */}
-              <div className="mb-0 md:mb-12">
+              <div className="mb-0 md:mb-20">
                 <div className="text-gray-400 text-sm mb-4 md:md-4">We do everything design-related that includes:</div>
                 <ul className="space-y-1 text-sm text-white">
                   <li>+ Product design</li>
