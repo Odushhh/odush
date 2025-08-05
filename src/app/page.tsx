@@ -97,8 +97,8 @@ export default function Home() {
               {/* Subtext */}
               <div className="text-sm text-gray-400 mb-2 md:mb-8">
                 {/*<p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>*/}
-                <p className="mb-4">Startups, founders, and brands trust us to lead their product design efforts - designing high-converting, intuitive products that look & feel as good as they function.</p>
-                <p className="mb-2">Whether you're launching your product from scratch or scaling what's working, we design with intent & ship fast.</p>
+                <p className="mb-4">Startups and brands trust us to lead their product design efforts - <br />for high-converting, intuitive products that look as good as they work.</p>
+                <p className="mb-2">Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
               </div>
               {/* Services List */}
               <div className="mb-0 md:mb-12">
