@@ -93,11 +93,11 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-xl font-semibold text-white mb-4 md:mb-8">Design that looks good, but<br />works even better.</h1>
+              <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4 md:mb-4">Design that looks good, but<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm text-gray-400 mb-2 md:mb-8">
                 <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
-                <p className="mb-4">Whole team is locked up (willingly) in the basement - designing interfaces that look as good as they work.</p>
+                <p className="mb-4">We design interfaces & digital experiences that look as good as they work - frictionless & intuitive.</p>
                 <p className="mb-2">We've helped founders, startups, and brands discover<br />how they want their online presence to look and feel.</p>
               </div>
               {/* Services List */}
