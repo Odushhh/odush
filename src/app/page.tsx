@@ -96,9 +96,9 @@ export default function Home() {
               <h1 className="text-2xl md:text-2xl font-semibold text-white mb-4 md:mb-6">Design that looks good, but<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm text-gray-400 mb-2 md:mb-8">
-                <p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>
-                <p className="mb-4">We design interfaces & digital experiences that look as good as they work - frictionless & intuitive.</p>
-                <p className="mb-2">We've helped founders, startups, and brands discover<br />how they want their online presence to look and feel.</p>
+                {/*<p className="mb-4">Independent design studio based in Nairobi, Kenya.</p>*/}
+                <p className="mb-4">Startups, founders, and brands trust us to lead their product design efforts - designing high-converting, intuitive products that look & feel as good as they function.</p>
+                <p className="mb-2">Whether you're launching your product from scratch or scaling what's working, we design with intent & ship fast.</p>
               </div>
               {/* Services List */}
               <div className="mb-0 md:mb-12">
@@ -125,10 +125,12 @@ export default function Home() {
                   onClick={openModal}
                   className="bg-white text-black rounded-full px-1 py-3 md:px-6 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
                 >
-                  Schedule a Call
+                  Start a project today
                 </button>
 
-                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">Drop an Email</a>
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
+                  Drop an Email
+                </a>
                 
               </div>
               
