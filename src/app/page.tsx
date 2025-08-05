@@ -120,7 +120,7 @@ export default function Home() {
               <div className="text-gray-400 text-sm mb-6 md:mb-6">Open to serious projects. Or seriously fun ones.</div>
               {/* Button */}
 
-              <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-4'>
+              <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-2'>
                 <button
                   onClick={openModal}
                   className="bg-white text-black rounded-full px-1 py-3 md:px-6 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
@@ -134,10 +134,14 @@ export default function Home() {
               
               
               {/* Client Logos */}
-              <div className="flex flex-row gap-8 items-center opacity-80 py-4 md:mb-4">
-                <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
-                <Image src="/mookhlogo.png" alt="mookh" width={85} height={110}   />
-                <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110}  />
+              <div>
+                <p className="text-gray-400 text-sm mb-4 md:md-4">Trusted by Venture-backed startups</p>
+                <div className="flex flex-row gap-8 items-center opacity-80 py-4 md:mb-4">
+                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
+                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110}   />
+                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110}  />
+                </div>
+                
               </div>
             </div>
           </div>
