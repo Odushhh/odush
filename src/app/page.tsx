@@ -19,7 +19,8 @@ export default function Home() {
   const carouselImages = [    
     '/images/ob1.png',
     '/images/ob2.png', 
-    '/images/wrn0.png',
+    '/images/wrn01.png',
+    '/images/wrn02.png',
     '/images/footer0.png',
     '/images/eventapp1.png',
     '/images/wellthi0.png', 
