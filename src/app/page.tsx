@@ -17,8 +17,8 @@ export default function Home() {
 
   // Add images of selected works here (excluding .DS_Store and videos)
   const carouselImages = [    
+    '/images/chpter02.png',
     '/images/chpter01.png',
-    '/images/chpter05.png',
     '/images/ob1.png',
     '/images/ob2.png', 
     '/images/footer0.png',
