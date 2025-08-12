@@ -140,9 +140,9 @@ export default function Home() {
               <div>
                 {/*<p className="text-gray-400 text-sm mb-4 md:mb-4">Trusted by Venture-backed startups</p> */}
                 <div className="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
-                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-4 lg:h-2" />
-                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-5 lg:h-3" />
-                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-5 lg:h-3" />
+                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-4 lg:h-5 xl:h-5" />
+                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-5 lg:h-6 xl:h-5" />
+                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-5 lg:h-6 xl:h-5" />
                 </div>
                 
               </div>
