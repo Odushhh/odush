@@ -89,7 +89,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 justify-start items-start lg:justify-between lg:items-start lg:min-h-[calc(100vh-2rem)] lg:pb-8">
             <div  className="flex flex-col gap-0 justify-start items-start">
               {/* Logo */}
-              <div className="hidden lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
+              <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
                 <a href='https://ctrlzs.studio/'>
                 <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" />
                 </a>
@@ -98,7 +98,7 @@ export default function Home() {
               {/* Headline */}
               <h1 className="text-xl md:text-xl lg:text-[1.15rem] xl:text-[1.5rem] font-semibold text-white mb-4 lg:mb-6 leading-tight">Design that looks good, but<br />works even better.</h1>
               {/* Subtext */}
-              <div className="text-sm md:text-sm lg:text-lg xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8">
+              <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
                 <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
                 <p>Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
                 <p>Based in Nairobi, Kenya.</p>
@@ -118,17 +118,17 @@ export default function Home() {
             </div>
             
 
-            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-0 pb-0 md:pb-0'>
+            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
               {/* Button */}
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
                   onClick={openModal}
-                  className="bg-white text-black rounded-full px-1 py-3 md:px-6 md:py-2 sm:px-4 sm:py-3 md:font-base font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
+                  className="bg-white text-black rounded-full px-1 py-3 md:px-6 md:py-2 lg:px-4 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
                 >
-                  Start a project today
+                  Start a project
                 </button>
 
-                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-3 font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-3 lg:px-3 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
                   Drop an Email
                 </a>
               </div>
@@ -140,9 +140,9 @@ export default function Home() {
               <div>
                 {/*<p className="text-gray-400 text-sm mb-4 md:mb-4">Trusted by Venture-backed startups</p> */}
                 <div className="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
-                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-4" />
-                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-5" />
-                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-5" />
+                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-4 lg:h-2" />
+                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-5 lg:h-3" />
+                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-5 lg:h-3" />
                 </div>
                 
               </div>
