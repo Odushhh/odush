@@ -96,7 +96,7 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-xl md:text-xl lg:text-[1.15rem] xl:text-[1.5rem] font-semibold text-white mb-4 lg:mb-6 leading-tight">Design that looks good, but<br />works even better.</h1>
+              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Design that looks good, but<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
                 <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
@@ -123,12 +123,12 @@ export default function Home() {
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
                   onClick={openModal}
-                  className="bg-white text-black rounded-full px-1 py-3 md:px-5 md:py-3 lg:px-5 lg:py-3 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
+                  className="bg-white text-black rounded-full px-3 py-2 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
                 >
                   Start a project
                 </button>
 
-                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-4 lg:px-5 lg:py-4 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
                   Drop an Email
                 </a>
               </div>
@@ -141,8 +141,8 @@ export default function Home() {
                 {/*<p className="text-gray-400 text-sm mb-4 md:mb-4">Trusted by Venture-backed startups</p> */}
                 <div className="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
                   <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
-                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-5 lg:h-5 xl:h-6" />
-                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-5 lg:h-5 xl:h-6" />
+                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-4 lg:h-5 xl:h-6" />
+                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-4 lg:h-5 xl:h-6" />
                 </div>
                 
               </div>
