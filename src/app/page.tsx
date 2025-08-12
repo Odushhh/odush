@@ -128,7 +128,7 @@ export default function Home() {
                   Start a project
                 </button>
 
-                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-3 lg:px-5 lg:py-3 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-4 lg:px-5 lg:py-4 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
                   Drop an Email
                 </a>
               </div>
