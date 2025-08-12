@@ -140,7 +140,7 @@ export default function Home() {
               
               {/* Client Logos */}
               <div>
-                <p className="text-gray-400 text-sm mb-4 md:mb-4">Trusted by Venture-backed startups</p>
+                {/*<p className="text-gray-400 text-sm mb-4 md:mb-4">Trusted by Venture-backed startups</p> */}
                 <div className="flex flex-row gap-8 items-center opacity-80 py-4 md:mb-4">
                   <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} />
                   <Image src="/mookhlogo.png" alt="mookh" width={85} height={110}   />
