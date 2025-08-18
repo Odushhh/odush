@@ -91,7 +91,7 @@ export default function Home() {
               {/* Logo */}
               <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
                 <a href='https://ctrlzs.studio/'>
-                  <p className="font-bold font-helvetica text-xl text-[bg-gradient-to-r from-[#F5F5F5] to-[#E5E5E5] bg-clip-text]">Adrian Oduma</p>
+                  <p className="font-bold font-helvetica text-xl text-white leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Adrian Oduma</p>
                   {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" /> */}
                 </a>
                 
