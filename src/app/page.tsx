@@ -91,26 +91,33 @@ export default function Home() {
               {/* Logo */}
               <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
                 <a href='https://ctrlzs.studio/'>
-                <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" />
+                  <p className="italic font-lg text-xl text-[bg-gradient-to-r from-[#F5F5F5] to-[#E5E5E5] text-transparent bg-clip-text]">Adrian Oduma</p>
+                  {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" /> */}
                 </a>
                 
               </div>
               {/* Headline */}
-              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Design that looks good, but<br />works even better.</h1>
+              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Design that looks good, and<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
-                <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
+                <p>Nairobi-based Product Designer.<br /> </p>
+                <p>I partner with startups, founders, brands to create digital products that look as good as the work, with thoughtful product design.</p>
+                <p>Whether you're launching from scratch or scaling what's working, I design with intent & speed with a focus on real user impact.</p>
+                
+                {/*<p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
                 <p>Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
                 <p>Based in Nairobi, Kenya.</p>
+                */}
               </div>
               {/* Services List */}
               <div className="mb-0 lg:mb-20">
-                <div className="text-gray-400 text-sm mb-3 md:md-4">We do everything design-related that includes:</div>
+                <div className="text-gray-400 text-sm mb-3 md:md-4">I do almost everything design-related that includes:</div>
                 <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-white leading-tight">
                   <li>+ Product design</li>
                   <li>+ Web & mobile design</li>
-                  <li>+ Design systems</li>
+                  <li>+ Design retainer</li>
                   <li>+ Landing page redesign</li>
+                  <li>+ Design systems</li>
                   <li>+ UX audit & consultation</li>
                 </ul>
               </div>
