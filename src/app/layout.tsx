@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 // const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ctrlZ - Designed for Clarity, Built for Growth",
-  description: "Freelance Design Studio based in Nairobi, Kenya",
+  title: "Adrian Oduma - Product Designer",//"ctrlZ - Designed for Clarity, Built for Growth",
+  description: "Nairobi-based Designer",//"Freelance Design Studio based in Nairobi, Kenya",
 };
 
 export default function RootLayout({
