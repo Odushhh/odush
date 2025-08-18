@@ -73,7 +73,7 @@ export default function Home() {
       <header className="lg:hidden md:hidden px-6 pt-4 sticky top-0 z-50 bg-[#181818]">
         <div className="flex justify-between items-center w-full">
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }}>
-            <p className="font-normal text-base text-gray-400 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Adrian Oduma</p>
+            <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p>
             {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={70} height={30} className="w-auto h-6"/> */}
           </a>
         </div>
@@ -92,7 +92,7 @@ export default function Home() {
               {/* Logo */}
               <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
                 <a href='https://ctrlzs.studio/'>
-                  <p className="font-normal text-base text-gray-400 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Adrian Oduma</p>
+                  <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p>
                   {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" /> */}
                 </a>
                 
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
 
               {/* Tagline */}
-              <div className="text-gray-400 text-sm mb-6 md:mb-4">Open to serious projects. Or seriously fun ones.</div>
+              {/*<div className="text-gray-400 text-sm mb-6 md:mb-4">Open to serious projects. Or seriously fun ones.</div> */}
               
               {/* Client Logos */}
               <div>
