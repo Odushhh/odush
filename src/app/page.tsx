@@ -92,7 +92,7 @@ export default function Home() {
               {/* Logo */}
               <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
                 <a href='https://ctrlzs.studio/'>
-                  <p className="font-normal text-xl text-gray-400 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Adrian Oduma</p>
+                  <p className="font-normal text-base text-gray-400 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Adrian Oduma</p>
                   {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" /> */}
                 </a>
                 
@@ -105,7 +105,8 @@ export default function Home() {
                 <p>I partner with startups, founders, brands to design products that look as good as they work.</p>
                 <p>Whether you're launching from scratch or scaling what's working, I handle design with intent & speed.</p>
                 
-                {/*<p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
+                {/*
+                <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
                 <p>Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
                 <p>Based in Nairobi, Kenya.</p>
                 */}
