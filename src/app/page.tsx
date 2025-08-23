@@ -73,8 +73,8 @@ export default function Home() {
       <header className="lg:hidden md:hidden px-6 pt-4 sticky top-0 z-50 bg-[#181818]">
         <div className="flex justify-between items-center w-full">
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }}>
-            <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p>
-            {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={70} height={30} className="w-auto h-6"/> */}
+            {/* <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> */}
+            <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={70} height={30} className="w-auto h-6"/>
           </a>
         </div>
 
@@ -92,8 +92,8 @@ export default function Home() {
               {/* Logo */}
               <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
                 <a href='https://ctrlzs.studio/'>
-                  <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p>
-                  {/*<Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" /> */}
+                  {/*<p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> */}
+                  <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" />
                 </a>
                 
               </div>
@@ -101,19 +101,19 @@ export default function Home() {
               <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 leading-tight md:leading-tight lg:leading-tight xl:leading-tight">Design that looks good, and<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
-                <p>Nairobi-based Product Designer.<br /> </p>
-                <p>I partner with startups, founders, brands to design products that look as good as they work.</p>
-                <p>Whether you're launching from scratch or scaling what's working, I handle design with intent & speed.</p>
+                <p>We partner with startups & founders to design standout products that look as good as they work.</p>
+                <p>Whether you're launching from scratch or scaling what's working, we design with intent & speed.</p>
                 
                 {/*
                 <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
                 <p>Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
                 <p>Based in Nairobi, Kenya.</p>
+                <p>Nairobi-based Product Designer.<br /> </p>
                 */}
               </div>
               {/* Services List */}
               <div className="mb-0 lg:mb-20">
-                <div className="text-gray-400 text-sm mb-3 md:md-4">I do almost everything design-related that includes:</div>
+                <div className="text-gray-400 text-sm mb-3 md:md-4">Good for everything design-related that includes:</div>
                 <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-white leading-tight">
                   <li>+ Product design</li>
                   <li>+ Web & mobile design</li>
@@ -147,7 +147,7 @@ export default function Home() {
               
               {/* Client Logos */}
               <div>
-                <p className="text-gray-400 text-sm mb-4 md:mb-4">Previous partners:</p>
+                <p className="text-gray-400 text-sm mb-3 md:mb-2">Previous partners:</p>
                 <div className="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
                   <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
                   <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-4 lg:h-5 xl:h-6" />
