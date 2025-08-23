@@ -102,7 +102,7 @@ export default function Home() {
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
                 <p>We partner with startups & founders to design standout products that look as good as they work.</p>
-                <p>Whether you're launching from scratch or scaling what's working, we design with intent & speed.</p>
+                <p>Whether you're launching from 0 → 1 or scaling what's working, we design with intent & speed.</p>
                 
                 {/*
                 <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
