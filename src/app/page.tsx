@@ -102,8 +102,8 @@ export default function Home() {
               <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Design that looks good, and<br />works even better.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
-                <p>We partner with Web3, AI, and early-stage startups, founders to design standout products that look as good as they work.</p>
-                <p>Whether you're launching from 0 → 1 or scaling what's working, we design with intent & speed.</p>
+                <p>Partnering with Web3 and AI founders to design standout products that look as good as they work.</p>
+                <p>Whether you're launching from 0 → 1 or scaling what's working, design is handled with intent & speed.</p>
                 
                 {/*
                 <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
@@ -150,8 +150,8 @@ export default function Home() {
               <div>
                 <p className="text-gray-400 text-sm mb-3 md:mb-2">Previous partners:</p>
                 <div className="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
-                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
                   <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-4 lg:h-5 xl:h-6" />
+                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
                   <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-4 lg:h-5 xl:h-6" />
                 </div>
                 
