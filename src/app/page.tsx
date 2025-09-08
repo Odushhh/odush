@@ -99,10 +99,10 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Design that looks good, and<br />works even better.</h1>
+              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Design studio for Web3<br />and AI startups.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
-                <p>Partnering with Web3 and AI founders to design standout products that look as good as they work.</p>
+                <p>Crafting digital experiences that look good, but work even better.</p>
                 <p>Whether you're launching from 0 → 1 or scaling what's working, design is handled with intent & speed.</p>
                 
                 {/*
