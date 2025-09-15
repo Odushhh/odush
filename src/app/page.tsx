@@ -25,7 +25,7 @@ export default function Home() {
     '/images/footer0.png',
     '/images/wrn01.png',
     '/images/wrn02.png',
-    '/images/eventapp1.png',
+    '/images/eventapp3.png',
     '/images/wellthi0.png', 
     '/images/wellthi02.png', 
     '/images/zenlipa0.png', 
@@ -43,7 +43,8 @@ export default function Home() {
     // '/images/ob3.png',
     // '/images/ob4.png', 
     //'/images/minesweeper0.png',
-    //'/images/nudge02.png',   
+    //'/images/nudge02.png',  
+    //'/images/eventapp1.png',
      
   ];
 
