@@ -101,7 +101,7 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-white mb-4 lg:mb-6 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Design studio for Web3<br />and AI startups.</h1>
+              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-4 lg:mb-6 tracking-normal md:tracking-normal lg:tracking-normal xl:tracking-normal">Design studio for Web3<br />and AI startups.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
                 <p>Crafting digital experiences that look good, but work even better.</p>
@@ -117,7 +117,7 @@ export default function Home() {
               {/* Services List */}
               <div className="mb-0 lg:mb-20">
                 <div className="text-gray-400 text-sm mb-3 md:md-4">Good for everything design-related that includes:</div>
-                <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-white leading-tight">
+                <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-[#E5E5E5] tracking-normal">
                   <li>+ Product design</li>
                   <li>+ Web & mobile design</li>
                   <li>+ Design retainer</li>
@@ -135,12 +135,12 @@ export default function Home() {
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
                   onClick={openModal}
-                  className="bg-white text-black rounded-full px-3 py-2 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
+                  className="bg-[#E5E5E5] text-black rounded-full px-3 py-2 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
                 >
                   Start a project
                 </button>
 
-                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-white rounded-full px-2 py-3 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-[#E5E5E5] tracking-normal rounded-full px-2 py-3 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
                   Drop an Email
                 </a>
               </div>
@@ -152,7 +152,7 @@ export default function Home() {
               <div>
                 <p className="text-gray-400 text-sm mb-3 md:mb-2">Previous partners:</p>
                 <div className="flex flex-wrap gap-x-4 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
-                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
+                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-3 lg:h-4 xl:h-5 opacity-70" />
                   <Image src="/chpterLogo.png" alt="chpter" width={135} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
                   <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-2 lg:h-4 xl:h-5" />
                   <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
