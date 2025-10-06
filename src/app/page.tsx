@@ -28,8 +28,6 @@ export default function Home() {
     '/images/ob1.png',
     '/images/ob2.png', 
     '/images/footer0.png',
-    '/images/wrn01.png',
-    '/images/wrn02.png',
     '/images/wellthi0.png', 
     '/images/wellthi02.png', 
     '/images/zenlipa0.png', 
