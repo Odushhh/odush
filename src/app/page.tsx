@@ -88,7 +88,7 @@ export default function Home() {
             <div className="flex flex-col gap-0 justify-start items-start">
               
               <div className="hidden md:block lg:block mb-4 lg:mb-4 md:mb-4 xl:mb-4 mt-2 md:mt-2 lg:mt-2 xl:mt-3">
-                <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1"><a href='https://ctrlzs.studio/'>Louvre of Designs</a></h1>
+                <a href='https://ctrlzs.studio/' className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1">Louvre of Designs</a>
                 <h3 className="text-base md:text-base lg:text-base xl:text-lg font-light lg:font-light xl:font-light text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
                 {/*
                 <a href='https://ctrlzs.studio/'>
@@ -100,15 +100,15 @@ export default function Home() {
               
               {/* Subtext */}
               <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 my-4 md:my-4 lg:my-4 xl:my-4">
-                <p>Crafting digital products and experiences that look good, <br>but work even better.</p>
-                <p>I handle design with intent & speed - whether you're launching <br>from 0 → 1 or scaling what's working.</p>
-                <p className="my-8"><a href="https://adrian-oduma.framer.website/" className="underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm"> Adrian Oduma's Design Portfolio </a></p>
+                <p>Crafting digital products and experiences that look good, <br/>but work even better.</p>
+                <p>I handle design with intent & speed - whether you're launching <br/>from 0 → 1 or scaling what's working.</p>
+                <a href="https://adrian-oduma.framer.website/" className="my-8 underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm">Adrian Oduma's Design Portfolio </a>
               </div>
             </div>
 
-            {/* Bottom Half - CTA buttons & Logos */}
+            {/* Bottom Half */}
             <div className="relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-0 md:pl-4 lg:pl-4 pb-0 md:pb-0 mb-12 md:mb-12 sm:mb-12 lg:mb-12 xl:mb-12">
-              {/* Button */}
+              {/* CTA Buttons */}
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
                   onClick={openModal}
