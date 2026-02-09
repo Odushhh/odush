@@ -98,19 +98,19 @@ export default function Home() {
 
           <div className="flex flex-col gap-10 justify-start items-start lg:justify-between lg:items-start lg:min-h-[calc(100vh-2rem)] lg:pb-8">
             <div className="flex flex-col gap-0 justify-start items-start">
-              {/*
-              //Logo
-              <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-8">
+              
+              <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-2 lg:mb-2">
+                {/*
                 <a href='https://ctrlzs.studio/'>
-                  // <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> 
+                  <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> 
                   <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" />
                 </a>
                 */}
                 
+                <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1"><a href='https://ctrlzs.studio/'>Louvre of Designs</a></h1>
+                <h3 className="text-base md:text-base lg:text-base xl:text-lg font-normal lg:font-normal xl:font-normal text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
               </div>
-              {/* Headline */}
-              <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1 tracking-normal md:tracking-normal lg:tracking-normal xl:tracking-normal">Louvre of Designs</h1>
-              <h3 className="text-base md:text-base lg:text-base xl:text-lg font-normal lg:font-normal xl:font-normal text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
+              
               {/* Subtext */}
               <div className="text-gray-400 text-base md:text-base lg:text-base xl:text-lg font-normal space-y-4 mt-4 md:mt-4 lg:mt-8 xl:mt-8 mb-4 md:mb-4 lg:mb-6 xl:mb-8">
                 <p>Crafting digital products and experiences that look good, but work even better.</p>
