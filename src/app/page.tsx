@@ -107,8 +107,8 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-2xl md:text-2xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-2 lg:mb-2 tracking-normal md:tracking-normal lg:tracking-normal xl:tracking-normal"> Louvre of Designs. </h1>
-              <h3 className="text-base md:text-lg lg:text-xl xl:text-xl font-normal lg:font-normal xl:font-normal text-[#E5E5E5]"> Curated by Adrian Oduma. </h3>
+              <h1 className="text-2xl md:text-2xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-2 lg:mb-2 tracking-normal md:tracking-normal lg:tracking-normal xl:tracking-normal">Louvre of Designs</h1>
+              <h3 className="text-base md:text-lg lg:text-xl xl:text-xl font-normal lg:font-normal xl:font-normal text-[#E5E5E5]">Curated by Adrian Oduma.</h3>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mt-2 md:mt-4 lg:mt-8 xl:mt-8 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
                 <p>Curated by Adrian Oduma.</p>
