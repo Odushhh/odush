@@ -91,7 +91,7 @@ export default function Home() {
 
 
       {/* Main Content - Web version */}
-      <main className="bg-[#181818] w-full flex flex-col pl-0 pt-2 lg:pt-0 lg:flex-row lg:pl-8">
+      <main className="bg-[#181818] w-full flex flex-col pl-0 pt-0 lg:pt-0 lg:flex-row lg:pl-8">
         
         {/* Left Side */}
         <div className="w-full h-[620px] z-50 lg:z-0 lg:w-[30%] xl:w-[30%] pt-8 pr-6 pl-6 lg:pl-4 lg:pr-4 lg:h-screen lg:top-0 justify-start items-start lg:justify-between lg:items-start md:sticky lg:sticky xl:sticky lg:overflow-y-auto">
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 justify-start items-start lg:justify-between lg:items-start lg:min-h-[calc(100vh-2rem)] lg:pb-8">
             <div className="flex flex-col gap-0 justify-start items-start">
               
-              <div className="hidden md:block lg:block mb-2 lg:mb-4 md:mb-6 xl:mb-6 mt-2 md:mt-4 lg:mt-4 xl:mt-6 pt-4">
+              <div className="hidden md:block lg:block mb-2 lg:mb-3 md:mb-3 xl:mb-3 mt-2 md:mt-2 lg:mt-2 xl:mt-3">
                 {/*
                 <a href='https://ctrlzs.studio/'>
                   <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> 
@@ -112,7 +112,7 @@ export default function Home() {
               </div>
               
               {/* Subtext */}
-              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 mt-4 md:mt-4 lg:mt-8 xl:mt-8 mb-4 md:mb-4 lg:mb-6 xl:mb-8">
+              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 mt-2 md:mt-2 lg:mt-2 xl:mt-4 mb-4 md:mb-4 lg:mb-6 xl:mb-8">
                 <p>Crafting digital products and experiences that look good, but work even better.</p>
                 <p>I handle design with intent & speed - whether you're launching from 0 → 1 or scaling what's working.</p>
                 
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
 
 
-            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-20 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
+            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-12 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
               {/* Button */}
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
@@ -165,7 +165,7 @@ export default function Home() {
               {/*<div className="text-gray-400 text-sm mb-6 md:mb-4">Open to serious projects. Or seriously fun ones.</div> */}
               
               {/* Client Logos */}
-              <div className="pt-4 pb-20">
+              <div className="pt-4">
                 <p className="font-normal text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base mb-2 md:mb-2 sm:mb-2 lg:mb-2 xl:mb-2">Previous clients I've worked with:</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-4 items-center opacity-80 py-2">
                   <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-4 lg:h-4 xl:h-4 opacity-80" />
