@@ -102,14 +102,14 @@ export default function Home() {
               <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 my-6 md:my-6 lg:my-6 xl:my-6">
                 <p>Crafting digital products and experiences that look good, <br/>but work even better.</p>
                 <p>I handle design with intent & speed - whether you're launching <br/>from 0 → 1 or scaling what's working.</p>
-                <a href="https://adrian-oduma.framer.website/" className="pt-8 underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm">Adrian Oduma's Design Portfolio </a>
+                <p className="pt-8 underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm"><a href="https://adrian-oduma.framer.website/">Adrian Oduma's Design Portfolio </a></p>
               </div>
             </div>
 
             {/* Bottom Half */}
-            <div className="relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-0 md:pl-4 lg:pl-4 pb-0 md:pb-0 mb-12 md:mb-12 sm:mb-12 lg:mb-12 xl:mb-12">
+            <div className="relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-0 md:pl-4 lg:pl-4 pb-20 md:pb-20 sm:pb-20 lg:pb-20 xl:pb-20">
               {/* CTA Buttons */}
-              <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
+              <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2'>
                 <button
                   onClick={openModal}
                   className="bg-[#E5E5E5] text-black rounded-full px-3 py-2 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-normal lg:text-sm md:font-normal lg:text-sm font-normal text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
