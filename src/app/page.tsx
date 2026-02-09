@@ -99,10 +99,10 @@ export default function Home() {
               </div>
               
               {/* Subtext */}
-              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 my-4 md:my-4 lg:my-4 xl:my-4">
+              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 my-6 md:my-6 lg:my-6 xl:my-6">
                 <p>Crafting digital products and experiences that look good, <br/>but work even better.</p>
                 <p>I handle design with intent & speed - whether you're launching <br/>from 0 → 1 or scaling what's working.</p>
-                <a href="https://adrian-oduma.framer.website/" className="my-8 underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm">Adrian Oduma's Design Portfolio </a>
+                <a href="https://adrian-oduma.framer.website/" className="pt-8 underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm">Adrian Oduma's Design Portfolio </a>
               </div>
             </div>
 
