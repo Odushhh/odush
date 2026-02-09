@@ -91,7 +91,7 @@ export default function Home() {
 
 
       {/* Main Content - Web version */}
-      <main className="bg-[#181818] w-full flex flex-col pl-0 pt-2 lg:pt-0 lg:flex-row lg:pl-8">
+      <main className="bg-[#181818] w-full flex flex-col pl-0 pt-2 pb-12 lg:pt-0 lg:flex-row lg:pl-8">
         
         {/* Left Side */}
         <div className="w-full h-[620px] z-50 lg:z-0 lg:w-[30%] xl:w-[30%] pt-8 pr-6 pl-6 lg:pl-4 lg:pr-4 lg:h-screen lg:top-0 justify-start items-start lg:justify-between lg:items-start md:sticky lg:sticky xl:sticky lg:overflow-y-auto">
