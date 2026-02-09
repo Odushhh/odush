@@ -139,7 +139,7 @@ export default function Home() {
               */}
 
               <div className="mt-8 mb-8">
-                 <a href="https://adrian-oduma.framer.website/" className="underline decoration-1 text-white text-sm md:text-sm lg:text-sm xl:text-sm"> Adrian Oduma's Design Portfolio </a>
+                 <a href="https://adrian-oduma.framer.website/" className="underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm"> Adrian Oduma's Design Portfolio </a>
               </div>
 
               
