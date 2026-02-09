@@ -44,15 +44,6 @@ export default function Home() {
     '/images/pricing0.png',  
     '/images/unhinged01.png',
     '/images/unhinged02.png',
-
-    //'/images/wrn01.png',
-    // '/images/wrn02.png',
-    // '/images/ob3.png',
-    // '/images/ob4.png', 
-    //'/images/minesweeper0.png',
-    //'/images/nudge02.png',  
-    //'/images/eventapp1.png',
-     
   ];
 
   const openModal = () => setShowModal(true);
@@ -82,13 +73,10 @@ export default function Home() {
       <header className="lg:hidden md:hidden px-6 pt-4 sticky top-0 z-50 bg-[#181818]">
         <div className="flex justify-between items-center w-full">
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }}>
-            {/* <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> */}
             <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={70} height={30} className="w-auto h-6"/>
           </a>
         </div>
-
       </header>
-
 
       {/* Main Content - Web version */}
       <main className="bg-[#181818] w-full flex flex-col pl-0 lg:pt-0 lg:flex-row lg:pl-8">
@@ -99,53 +87,26 @@ export default function Home() {
           <div className="flex flex-col gap-10 justify-start items-start lg:justify-between lg:items-start lg:min-h-[calc(100vh-2rem)] lg:pb-8">
             <div className="flex flex-col gap-0 justify-start items-start">
               
-              <div className="hidden md:block lg:block mb-2 lg:mb-3 md:mb-3 xl:mb-3 mt-2 md:mt-2 lg:mt-2 xl:mt-3">
+              <div className="hidden md:block lg:block mb-4 lg:mb-4 md:mb-4 xl:mb-4 mt-2 md:mt-2 lg:mt-2 xl:mt-3">
+                <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1"><a href='https://ctrlzs.studio/'>Louvre of Designs</a></h1>
+                <h3 className="text-base md:text-base lg:text-base xl:text-lg font-light lg:font-light xl:font-light text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
                 {/*
                 <a href='https://ctrlzs.studio/'>
                   <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> 
                   <Image src="/ctrlZlogo2.png" alt="ctrlZ logo" width={85} height={30} className="w-auto h-10" />
                 </a>
                 */}
-                
-                <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1"><a href='https://ctrlzs.studio/'>Louvre of Designs</a></h1>
-                <h3 className="text-base md:text-base lg:text-base xl:text-lg font-light lg:font-light xl:font-light text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
               </div>
               
               {/* Subtext */}
-              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 mt-2 md:mt-2 lg:mt-2 xl:mt-4 mb-4 md:mb-4 lg:mb-6 xl:mb-8">
-                <p>Crafting digital products and experiences that look good, but work even better.</p>
-                <p>I handle design with intent & speed - whether you're launching from 0 → 1 or scaling what's working.</p>
-                
-                {/*
-                <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
-                <p>Whether you're launching from scratch or scaling what's working, we design with intent & ship fast.</p>
-                <p>Based in Nairobi, Kenya.</p>
-                <p>Nairobi-based Product Designer.<br /> </p>
-                */}
+              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 my-4 md:my-4 lg:my-4 xl:my-4">
+                <p>Crafting digital products and experiences that look good, <br>but work even better.</p>
+                <p>I handle design with intent & speed - whether you're launching <br>from 0 → 1 or scaling what's working.</p>
+                <p className="my-8"><a href="https://adrian-oduma.framer.website/" className="underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm"> Adrian Oduma's Design Portfolio </a></p>
               </div>
-
-              {/*
-              // Services List
-              <div className="mb-0 lg:mb-20">
-                <div className="text-gray-400 text-sm mb-3 md:md-4">Trust me, I'm good for everything design-related that includes:</div>
-                <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-[#E5E5E5] tracking-normal">
-                  <li>+ Product design</li>
-                  <li>+ Mobile & Web design</li>
-                  <li>+ Landing page redesign</li>
-                  <li>+ Design systems</li>
-                  <li>+ UX audits & consultation</li>
-                </ul>
-              </div>
-              */}
-
-              <div className="mt-8 mb-8">
-                 <a href="https://adrian-oduma.framer.website/" className="underline decoration-wavy text-[#E5E5E5] text-sm md:text-sm lg:text-sm xl:text-sm"> Adrian Oduma's Design Portfolio </a>
-              </div>
-
-              
             </div>
 
-
+            {/* Bottom Half - CTA buttons & Logos */}
             <div className="relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-0 md:pl-4 lg:pl-4 pb-0 md:pb-0 mb-12 md:mb-12 sm:mb-12 lg:mb-12 xl:mb-12">
               {/* Button */}
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
@@ -160,9 +121,6 @@ export default function Home() {
                   Drop an Email
                 </a>
               </div>
-
-              {/* Tagline */}
-              {/*<div className="text-gray-400 text-sm mb-6 md:mb-4">Open to serious projects. Or seriously fun ones.</div> */}
               
               {/* Client Logos */}
               <div className="pt-4">
