@@ -99,7 +99,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 justify-start items-start lg:justify-between lg:items-start lg:min-h-[calc(100vh-2rem)] lg:pb-8">
             <div className="flex flex-col gap-0 justify-start items-start">
               
-              <div className="hidden md:block lg:block lg:mb-6 md:mb-8 xl:mb-6 pt-0 mb-2 lg:mb-2">
+              <div className="hidden md:block lg:block mb-2 lg:mb-4 md:mb-6 xl:mb-6 mt-2 md:mt-4 lg:mt-4 xl:mt-6 pt-4">
                 {/*
                 <a href='https://ctrlzs.studio/'>
                   <p className="font-normal text-base text-gray-400 tracking-tight md:tracking-tight lg:tracking-tight xl:tracking-tight">Adrian Oduma</p> 
@@ -108,11 +108,11 @@ export default function Home() {
                 */}
                 
                 <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-1 lg:mb-1"><a href='https://ctrlzs.studio/'>Louvre of Designs</a></h1>
-                <h3 className="text-base md:text-base lg:text-base xl:text-lg font-normal lg:font-normal xl:font-normal text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
+                <h3 className="text-base md:text-base lg:text-base xl:text-lg font-light lg:font-light xl:font-light text-[#BEBEBE]">Curated by Adrian Oduma.</h3>
               </div>
               
               {/* Subtext */}
-              <div className="text-gray-400 text-base md:text-base lg:text-base xl:text-lg font-normal space-y-4 mt-4 md:mt-4 lg:mt-8 xl:mt-8 mb-4 md:mb-4 lg:mb-6 xl:mb-8">
+              <div className="text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base font-normal space-y-4 mt-4 md:mt-4 lg:mt-8 xl:mt-8 mb-4 md:mb-4 lg:mb-6 xl:mb-8">
                 <p>Crafting digital products and experiences that look good, but work even better.</p>
                 <p>I handle design with intent & speed - whether you're launching from 0 → 1 or scaling what's working.</p>
                 
@@ -146,17 +146,17 @@ export default function Home() {
             </div>
 
 
-            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-12 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
+            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-20 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
               {/* Button */}
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
                   onClick={openModal}
-                  className="bg-[#E5E5E5] text-black rounded-full px-3 py-2 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
+                  className="bg-[#E5E5E5] text-black rounded-full px-3 py-2 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-normal lg:text-sm md:font-normal lg:text-sm font-normal text-sm mb-2 md:mb-4 hover:bg-[#D9D9D9] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#D9D9D9] md:transition-colors md:duration-100"
                 >
                   Start a project
                 </button>
 
-                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-[#E5E5E5] tracking-normal rounded-full px-2 py-3 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-base lg:text-sm md:font-base lg:text-sm font-semibold text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
+                <a href="mailto:adrianoduma8@gmail.com" className="bg-[#353535] text-[#E5E5E5] rounded-full px-2 py-3 md:px-5 md:py-2 lg:px-5 lg:py-2 lg:font-normal lg:text-sm md:font-normal lg:text-sm font-normal text-sm mb-2 md:mb-4 hover:bg-[#454545] transition-colors duration-100 w-full sm:w-auto text-center md:hover:bg-[#454545] md:transition-colors md:duration-100">
                   Drop an Email
                 </a>
               </div>
@@ -165,17 +165,18 @@ export default function Home() {
               {/*<div className="text-gray-400 text-sm mb-6 md:mb-4">Open to serious projects. Or seriously fun ones.</div> */}
               
               {/* Client Logos */}
-              <div className="pt-4">
-                <p className="font-normal text-gray-400 text-base md:text-base lg:text-base xl:text-lg mb-4 md:mb-4 sm:mb-4 lg:mb-8 xl:mb-8">Previous clients I've worked with:</p>
-                <div className="flex flex-wrap gap-x-6 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
+              <div className="pt-4 pb-20">
+                <p className="font-normal text-gray-400 text-sm md:text-sm lg:text-sm xl:text-base mb-2 md:mb-2 sm:mb-2 lg:mb-2 xl:mb-2">Previous clients I've worked with:</p>
+                <div className="flex flex-wrap gap-x-6 gap-y-4 items-center opacity-80 py-2">
                   <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-4 lg:h-4 xl:h-4 opacity-80" />
                   <Image src="/astrallogo.png" alt="astral" width={135} height={110} className="w-auto h-4 lg:h-4 xl:h-4" />
                   <Image src="/chpterLogo.png" alt="chpter" width={135} height={110} className="w-auto h-4 lg:h-4 xl:h-4" />
                   <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-3 lg:h-4 xl:h-4" />
                   <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-4 lg:h-4 xl:h-4" />
                 </div>
-                
               </div>
+
+              
             </div>
           </div>
 
