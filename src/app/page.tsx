@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
     
-    <div className="bg-[#181818] min-h-screen w-full flex flex-col lg:flex-row pb-16">
+    <div className="bg-[#181818] min-h-screen w-full flex flex-col lg:flex-row">
       <Analytics  />
 
       {/* Mobile Header (hidden on desktop) */}
@@ -91,7 +91,7 @@ export default function Home() {
 
 
       {/* Main Content - Web version */}
-      <main className="bg-[#181818] w-full flex flex-col pl-0 pt-0 lg:pt-0 lg:flex-row lg:pl-8">
+      <main className="bg-[#181818] w-full flex flex-col pl-0 lg:pt-0 lg:flex-row lg:pl-8">
         
         {/* Left Side */}
         <div className="w-full h-[620px] z-50 lg:z-0 lg:w-[30%] xl:w-[30%] pt-8 pr-6 pl-6 lg:pl-4 lg:pr-4 lg:h-screen lg:top-0 justify-start items-start lg:justify-between lg:items-start md:sticky lg:sticky xl:sticky lg:overflow-y-auto">
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
 
 
-            <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-12 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
+            <div className="relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 py-0 md:pl-4 lg:pl-4 pb-0 md:pb-0 mb-12 md:mb-12 sm:mb-12 lg:mb-12 xl:mb-12">
               {/* Button */}
               <div className='flex flex-row gap-2 mb-2 sm:flex-row md:gap-2 md:mb-0'>
                 <button
@@ -175,9 +175,10 @@ export default function Home() {
                   <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-4 lg:h-4 xl:h-4" />
                 </div>
               </div>
-
               
             </div>
+
+            
           </div>
 
         </div>
