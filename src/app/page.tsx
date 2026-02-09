@@ -133,8 +133,10 @@ export default function Home() {
                 </ul>
               </div>
 
-              <p className="mt-8 mb-8"></p>
-              <p className="underlined decoration-1 text-white text-base md:text-lg lg:text-[1rem] xl:text-[1.15rem]"><a href="https://adrian-oduma.framer.website/"></a>Adrian Oduma's Design Portfolio</a></p>
+              <div className="mt-8 mb-8">
+                 <a href="https://adrian-oduma.framer.website/" className="underlined decoration-1 text-white text-base md:text-lg lg:text-[1rem] xl:text-[1.15rem]"> Adrian Oduma's Design Portfolio </a>
+              </div>
+             
 
             </div>
             
