@@ -107,12 +107,14 @@ export default function Home() {
                 
               </div>
               {/* Headline */}
-              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-4 lg:mb-6 tracking-normal md:tracking-normal lg:tracking-normal xl:tracking-normal">Design for Web3<br />and AI startups.</h1>
+              <h1 className="text-xl md:text-xl lg:text-[1.25rem] xl:text-[1.5rem] font-semibold lg:font-semibold xl:font-semibold text-[#E5E5E5] mb-4 lg:mb-6 tracking-normal md:tracking-normal lg:tracking-normal xl:tracking-normal">Louvre of Designs gallery for Web3<br />and AI startups.</h1>
               {/* Subtext */}
               <div className="text-sm md:text-sm lg:text-sm xl:text-sm space-y-4 text-gray-400 mb-1 md:mb-8 lg:mb-8 xl:mb-8">
+                <p>Curated by Adrian Oduma.</p>
                 <p>Crafting digital experiences that look good, but work even better.</p>
-                <p>Whether you're launching from 0 → 1 or scaling what's working, I handle design with intent & speed.</p>
-                <p>Ran solo by Adrian Oduma.</p>
+                <p>I handle design with intent & speed - whether you're launching from 0 → 1 or scaling what's working.</p>
+                <br></br>
+                <p><a href="https://adrian-oduma.framer.website/">Adrian Oduma's Design Portfolio</a></p>
                 
                 {/*
                 <p>Startups, founders, and brands trust us to lead their product design efforts from 0→1.</p>
@@ -123,14 +125,13 @@ export default function Home() {
               </div>
               {/* Services List */}
               <div className="mb-0 lg:mb-20">
-                <div className="text-gray-400 text-sm mb-3 md:md-4">Good for everything design-related that includes:</div>
+                <div className="text-gray-400 text-sm mb-3 md:md-4">Trust me, I'm good for everything design-related that includes:</div>
                 <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-[#E5E5E5] tracking-normal">
                   <li>+ Product design</li>
-                  <li>+ Web & mobile design</li>
-                  <li>+ Design retainer</li>
+                  <li>+ Mobile & Web design</li>
                   <li>+ Landing page redesign</li>
                   <li>+ Design systems</li>
-                  <li>+ UX audit & consultation</li>
+                  <li>+ UX audits & consultation</li>
                 </ul>
               </div>
 
@@ -157,13 +158,13 @@ export default function Home() {
               
               {/* Client Logos */}
               <div>
-                <p className="text-gray-400 text-sm mb-3 md:mb-2">Previous clients I've worked with:</p>
+                <p className="text-gray-400 text-sm mb-8 md:mb-4 sm:mb-4 lg:mb-8 xl:mb-8">Previous clients I've worked with:</p>
                 <div className="flex flex-wrap gap-x-4 gap-y-4 items-center opacity-80 py-2 md:mb-2 lg:mb-2 xl:mb-2">
-                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-3 lg:h-4 xl:h-5 opacity-70" />
-                  <Image src="/astrallogo.png" alt="astral" width={135} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
-                  <Image src="/chpterLogo.png" alt="chpter" width={135} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
-                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-2 lg:h-4 xl:h-5" />
-                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-3 lg:h-4 xl:h-5" />
+                  <Image src="/mookhlogo.png" alt="mookh" width={85} height={110} className="w-auto h-3 lg:h-3 xl:h-4 opacity-80" />
+                  <Image src="/astrallogo.png" alt="astral" width={135} height={110} className="w-auto h-3 lg:h-3 xl:h-4" />
+                  <Image src="/chpterLogo.png" alt="chpter" width={135} height={110} className="w-auto h-3 lg:h-3 xl:h-4" />
+                  <Image src="/wellthilogo.png" alt="wellthi" width={95} height={110} className="w-auto h-2 lg:h-3 xl:h-4" />
+                  <Image src="/wrnlogo.png" alt="we run nairobi" width={135} height={110} className="w-auto h-3 lg:h-3 xl:h-4" />
                 </div>
                 
               </div>
