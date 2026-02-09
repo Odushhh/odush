@@ -121,7 +121,9 @@ export default function Home() {
                 <p>Nairobi-based Product Designer.<br /> </p>
                 */}
               </div>
-              {/* Services List */}
+
+              {/*
+              // Services List
               <div className="mb-0 lg:mb-20">
                 <div className="text-gray-400 text-sm mb-3 md:md-4">Trust me, I'm good for everything design-related that includes:</div>
                 <ul className="space-y-1 text-sm md:text-sm lg:text-sm xl:text-sm text-[#E5E5E5] tracking-normal">
@@ -132,14 +134,15 @@ export default function Home() {
                   <li>+ UX audits & consultation</li>
                 </ul>
               </div>
+              */}
 
               <div className="mt-8 mb-8">
-                 <a href="https://adrian-oduma.framer.website/" className="underlined decoration-1 text-white text-base md:text-lg lg:text-[1rem] xl:text-[1.15rem]"> Adrian Oduma's Design Portfolio </a>
+                 <a href="https://adrian-oduma.framer.website/" className="underline decoration-1 text-white text-sm md:text-sm lg:text-sm xl:text-sm"> Adrian Oduma's Design Portfolio </a>
               </div>
-             
 
+              
             </div>
-            
+
 
             <div className='relative md:gap-4 lg:mt-auto md:absolute bottom-0 md:bottom-0 left-0 md:left-0 right-0 md:right-0 px-0 md:pl-4 lg:pl-4 pb-0 md:pb-0'>
               {/* Button */}
