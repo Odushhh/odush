@@ -133,7 +133,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <br></br>
+              <br></br><br></br><br></br>
               <p className="text-white text-base md:text-lg lg:text-[1rem] xl:text-[1.15rem]"><a href="https://adrian-oduma.framer.website/"></a>Adrian Oduma's Design Portfolio</a></p>
 
             </div>
